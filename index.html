@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es_CL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regiones de Chile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container flex">
+        <div class="row-auto">
+        <!-- IMAGEN DE CHILE MAPEADA POR REGIONES -->
+            <div class="col-4">
+            <img src="img/regiones.png" usemap="#mapaMapeado">
+            <map name="mapaMapeado">
+                <area alt="Arica y Parinacota" title="Arica y Parinacota" coords="7,31,8,67,27,78,45,44" shape="poly" onmouseover="hover();">
+                <area alt="Tarapacá" title="Tarapacá" coords="28,80,63,103,78,83,79,61,47,43" shape="poly" onmouseover="hover();">
+                <area alt="Antofagasta" title="Antofagasta" coords="128,170,153,138,147,83,127,64,81,60,81,81,66,104" shape="poly" onmouseover="hover();">
+                <area alt="Atacama" title="Atacama" coords="155,127,129,171,178,224,205,200,181,141" shape="poly" onmouseover="hover();">
+                <area alt="Coquimbo" title="Coquimbo" coords="177,224,205,200,247,240,229,263" shape="poly" onmouseover="hover();">
+                <area alt="Valparaíso" title="Valparaíso" coords="230,263,254,291,260,283,252,261,267,245,247,240" shape="poly" onmouseover="hover();">
+                <area alt="Metropolitana" title="Metropolitana" coords="289,263,260,282,252,259,267,245" shape="poly" onmouseover="hover();">
+                <area alt="Ohiggins" title="Ohiggins" coords="297,279,265,305,254,290,261,280,289,262" shape="poly" onmouseover="hover();">
+                <area alt="Maule" title="Maule" coords="298,280,315,291,314,310,279,332,265,305" shape="poly" onmouseover="hover();">
+                <area alt="Bío-Bío" title="Bío-Bío" coords="279,332,293,367,315,377,322,372,313,352,348,333,314,311" shape="poly" onmouseover="hover();">
+                <area alt="Araucanía" title="Araucanía" coords="352,334,315,352,321,371,317,378,338,390,364,365" shape="poly" onmouseover="hover();">
+                <area alt="Los Ríos" title="Los Ríos" coords="339,389,345,406,380,383,365,364" shape="poly" onmouseover="hover();">
+                <area alt="Los Lagos" title="Los Lagos" coords="346,406,397,468,447,425,380,383" shape="poly" onmouseover="hover();">
+                <area alt="Aysén" title="Aysén" coords="398,469,442,535,489,567,500,538,530,530,501,467,446,424" shape="poly" onmouseover="hover();">
+                <area alt="Magallanes" title="Magallanes" coords="489,568,499,540,530,530,648,505,737,522,738,558,667,603,565,620" shape="poly" onmouseover="hover();">
+            </map>
+            </div>
+        
+        <!-- TARJETA MANIPULADA POR JS --> 
+            <div class="col-2">
+                <div id="tarjeta" class="card" style="width: 20rem;">
+                    <img id="imagenRegion" src="img/01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 id="nombre" class="card-title">NOMBRE_REGION</h5>
+                        <h6 class="card-text">Atractivos principales</h6>
+                        <ul>
+                            <li id="atractivo1">Atractivo1</li>
+                            <li id="atractivo1">Atractivo2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
