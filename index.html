@@ -10,41 +10,39 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-9">
             <!-- IMAGEN DE CHILE MAPEADA POR REGIONES -->
-                <div class="col-9">
-                    <img src="img/regiones.png" usemap="#mapaMapeado">
-                    <map name="mapaMapeado">
-                        <area onMouseOut="ocultar();" alt="Arica y Parinacota" coords="7,31,8,67,27,78,45,44" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Tarapacá" coords="28,80,63,103,78,83,79,61,47,43" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Antofagasta" coords="128,170,153,138,147,83,127,64,81,60,81,81,66,104" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Atacama" coords="155,127,129,171,178,224,205,200,181,141" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Coquimbo" coords="177,224,205,200,247,240,229,263" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Valparaíso" coords="230,263,254,291,260,283,252,261,267,245,247,240" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Metropolitana" coords="289,263,260,282,252,259,267,245" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Ohiggins" coords="297,279,265,305,254,290,261,280,289,262" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Maule" coords="298,280,315,291,314,310,279,332,265,305" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Bío-Bío" coords="279,332,293,367,315,377,322,372,313,352,348,333,314,311" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Araucanía" coords="352,334,315,352,321,371,317,378,338,390,364,365" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Los Ríos" coords="339,389,345,406,380,383,365,364" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Los Lagos" coords="346,406,397,468,447,425,380,383" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Aysén" coords="398,469,442,535,489,567,500,538,530,530,501,467,446,424" shape="poly">
-                        <area onMouseOut="ocultar();" alt="Magallanes" coords="489,568,499,540,530,530,648,505,737,522,738,558,667,603,565,620" shape="poly">
+                <img src="img/regiones.png" usemap="#mapaMapeado">
+                <map name="mapaMapeado">
+                    <area onMouseOut="ocultar();" alt="Arica y Parinacota" coords="7,31,8,67,27,78,45,44" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Tarapacá" coords="28,80,63,103,78,83,79,61,47,43" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Antofagasta" coords="128,170,153,138,147,83,127,64,81,60,81,81,66,104" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Atacama" coords="155,127,129,171,178,224,205,200,181,141" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Coquimbo" coords="177,224,205,200,247,240,229,263" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Valparaíso" coords="230,263,254,291,260,283,252,261,267,245,247,240" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Metropolitana" coords="289,263,260,282,252,259,267,245" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Ohiggins" coords="297,279,265,305,254,290,261,280,289,262" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Maule" coords="298,280,315,291,314,310,279,332,265,305" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Bío-Bío" coords="279,332,293,367,315,377,322,372,313,352,348,333,314,311" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Araucanía" coords="352,334,315,352,321,371,317,378,338,390,364,365" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Los Ríos" coords="339,389,345,406,380,383,365,364" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Los Lagos" coords="346,406,397,468,447,425,380,383" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Aysén" coords="398,469,442,535,489,567,500,538,530,530,501,467,446,424" shape="poly">
+                    <area onMouseOut="ocultar();" alt="Magallanes" coords="489,568,499,540,530,530,648,505,737,522,738,558,667,603,565,620" shape="poly">
                     </map>
-                </div>
+            </div>
             
             <!-- TARJETA MANIPULADA POR JS --> 
-                <div class="col-6 col-md-4">
-                    <div id="tarjeta" class="card" style="display: none;">
-                        <img id="imagenRegion" src="img/01.jpg" class="card-img-top">
-                        <div class="card-body">
-                            <h5 id="nombre" class="card-title">NOMBRE_REGION</h5>
-                            <h6 class="card-text">Atractivos principales</h6>
-                            <ul>
-                                <li id="atractivo1">Atractivo1</li>
-                                <li id="atractivo2">Atractivo2</li>
-                            </ul>
-                        </div>
+            <div class="col-3">
+                <div id="tarjeta" class="card" style="display: none;">
+                    <img id="imagenRegion" src="img/01.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 id="nombre" class="card-title">NOMBRE_REGION</h5>
+                        <h6 class="card-text">Atractivos principales</h6>
+                        <ul>
+                            <li id="atractivo1">Atractivo1</li>
+                            <li id="atractivo2">Atractivo2</li>
+                        </ul>
                     </div>
                 </div>
             </div>
